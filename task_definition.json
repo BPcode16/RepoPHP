@@ -1,0 +1,61 @@
+{
+    "taskDefinitionArn": "arn:aws:ecs:us-east-2:279233581750:task-definition/mitarea:1",
+    "containerDefinitions": [
+        {
+            "name": "mitarea",
+            "image": "279233581750.dkr.ecr.us-east-2.amazonaws.com/mirepo",
+            "cpu": 1024,
+            "memory": 1024,
+            "portMappings": [
+                {
+                    "name": "mitarea-80-tcp",
+                    "containerPort": 80,
+                    "hostPort": 80,
+                    "protocol": "tcp",
+                    "appProtocol": "http"
+                }
+            ],
+            "essential": true,
+            "environment": [],
+            "environmentFiles": [],
+            "mountPoints": [],
+            "volumesFrom": [],
+            "ulimits": [],
+            "resourceRequirements": [
+                {
+                    "value": "1",
+                    "type": "GPU"
+                }
+            ]
+        }
+    ],
+    "family": "mitarea",
+    "networkMode": "bridge",
+    "revision": 1,
+    "volumes": [],
+    "status": "ACTIVE",
+    "requiresAttributes": [
+        {
+            "name": "com.amazonaws.ecs.capability.ecr-auth"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
+        }
+    ],
+    "placementConstraints": [],
+    "compatibilities": [
+        "EC2"
+    ],
+    "requiresCompatibilities": [
+        "EC2"
+    ],
+    "cpu": "1024",
+    "memory": "1024",
+    "runtimePlatform": {
+        "cpuArchitecture": "X86_64",
+        "operatingSystemFamily": "LINUX"
+    },
+    "registeredAt": "2023-07-12T00:28:41.612Z",
+    "registeredBy": "arn:aws:iam::279233581750:root",
+    "tags": []
+}
