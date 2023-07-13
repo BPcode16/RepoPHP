@@ -1,6 +1,2 @@
 FROM php:8.2-apache
-ENV PORT=80
-ENV PORT=8080
 COPY / /var/www/html/
-EXPOSE 80
-EXPOSE 8080
