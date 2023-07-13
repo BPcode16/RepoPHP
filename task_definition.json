@@ -1,5 +1,5 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-east-2:279233581750:task-definition/mitarea:2",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-2:279233581750:task-definition/mitarea:11",
     "containerDefinitions": [
         {
             "name": "mitarea",
@@ -23,14 +23,18 @@
         }
     ],
     "family": "mitarea",
+    "taskRoleArn": "arn:aws:iam::279233581750:role/ecsTaskExecutionRole",
     "executionRoleArn": "arn:aws:iam::279233581750:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
-    "revision": 2,
+    "revision": 11,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
         {
             "name": "com.amazonaws.ecs.capability.ecr-auth"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.task-iam-role"
         },
         {
             "name": "ecs.capability.execution-role-ecr-pull"
@@ -56,7 +60,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2023-07-13T03:58:56.150Z",
+    "registeredAt": "2023-07-13T15:14:47.386Z",
     "registeredBy": "arn:aws:iam::279233581750:root",
     "tags": []
 }
