@@ -1,5 +1,5 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-east-2:279233581750:task-definition/mitarea:13",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-2:279233581750:task-definition/mitarea:15",
     "containerDefinitions": [
         {
             "name": "mitarea",
@@ -26,7 +26,7 @@
     "taskRoleArn": "arn:aws:iam::279233581750:role/ecsTaskExecutionRole",
     "executionRoleArn": "arn:aws:iam::279233581750:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
-    "revision": 13,
+    "revision": 15,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -60,7 +60,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2023-07-13T16:04:52.161Z",
+    "registeredAt": "2023-07-13T16:22:02.869Z",
     "registeredBy": "arn:aws:iam::279233581750:root",
     "tags": []
 }
